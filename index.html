@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page title -->
+    <title>PLAYBOX ITTelkom Surabaya</title>
+    <!-- Favicon -->
+    <link rel="icon" href="assets/logo.png" type="image/x-icon">
+    <!-- Font Awesome CSS library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Custom CSS styles -->
+    <link rel="stylesheet" href="style/style.css">
+    <style>
+        /* Inline CSS style for the scroll-to-top button */
+        #btnScrollTop {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            border: none;
+            outline: none;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 18px;
+            background-color: #096296;
+            color: white;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+        }
+
+        /* ... */
+    </style>
+</head>
+
+<body>
+    <!-- Scroll-to-top button -->
+    <button onclick="topFunction()" id="btnScrollTop" title="Go to top">
+    <!-- Icon dar fontawesome -->
+        <i class="fa fa-angle-up"></i>
+    </button>
+    <!-- Page header -->
+    <header>
+        <!-- Logo -->
+        <img class="logo" src="assets/logos1.png" alt="PLAYBOX">
+        <!-- Navigation bar -->
+        <nav class="navbar">
+            <a href="#about">Tentang</a>
+            <a href="#Linimasa">Linimasa</a>
+            <a href="daftar.html">Daftar</a>
+            <a href="#hubungi">Hubungi</a>
+        </nav>
+    </header>
+    <!-- Slideshow -->
+    <div class="slides">
+        <!-- Slide 1 -->
+        <div class="slide">
+            <img src="assets/slide1.png" alt="">
+        </div>
+        <!-- Slide 2 -->
+        <div class="slide">
+            <img src="assets/slide2.png" alt="">
+        </div>
+        <!-- Slide 3 -->
+        <div class="slide">
+            <img src="assets/slide3.png" alt="">
+        </div>
+        <!-- Slide 4 -->
+        <div class="slide">
+            <img src="assets/slide4.png" alt="">
+        </div>
+        <!-- Slide navigation -->
+        <div class="navigation">
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(-1)">&#10095;</a>
+        </div>
+    </div>
+    <br>
+    <!-- About section -->
+    <section class="about" id="about">
+        <div class="row">
+            <!-- Video container -->
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/-SXhkm09qbM"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <!-- Content -->
+            <div class="content">
+                <h3>PLAYBOX Season 3</h3>
+                <p>PLAYBOX adalah student start-up competition. PLAYBOX Season 3 memiliki 2 kateogri yakni SMA/SMK
+                    Sederajat dan Mahasiswa dengan skala Nasional</p>
+                <p>Bagi mahasiswa, PLAYBOX adalah gabungan dari ideathon dan hackathon, sementara bagi SMA/SMK
+                    Sederajat, PLAYBOX merupakan gabungan dari ideathon dan kompetisi visualisasi</p>
+            </div>
+        </div>
+    </section>
+    <br>
+    <!-- Linimasa section -->
+    <section class="Linimasa" id="Linimasa">
+        <div class="section-head">
+            <h3>LINIMASA</h3>
+        </div>
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="card">
+                <div class="card-img-container">
+                    <img src="assets/logos1.png" alt="Avatar">
+                </div>
+                <div class="card-container">
+                    <h4><b>PLAYBOX Season 1</b></h4>
+                    <p>Maret - Mei 2021</p>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="card">
+                <div class="card-img-container">
+                    <img src="assets/logos2.png" alt="Avatar">
+                </div>
+                <div class="card-container">
+                    <h4><b>PLAYBOX Season 2</b></h4>
+                    <p>September 2021 - Januari 2022</p>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <a href="season3.html">
+                <div class="card">
+                    <div class="card-img-container">
+                        <img src="assets/logos3.png" alt="Avatar">
+                    </div>
+                    <div class="card-container">
+                        <h4><b>PLAYBOX Season 3</b></h4>
+                        <p>April - Agustus 2022</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+    <!-- Hubungi section -->
+        <section class="hubungi" id="hubungi">
+            <div class="row">
+                <div class="section-head">
+                    <!-- WhatsApp contact link -->
+                    <a href="http://wa.me/6281359555688">Hubungi kami</a>
+                </div>
+            </div>
+        </section>
+    <!-- Custom JavaScript -->
+    <script src="script/script.js"></script>
+    <script>
+        // JavaScript function to scroll to the top of the page
+        function topFunction() {
+            Animation((document.documentElement.scrollTop = 0), 5000);
+        }
+    </script>
+</body>
+
+</html>

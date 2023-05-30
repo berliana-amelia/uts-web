@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar PLAYBOX</title>
+    <style>
+        /* Gaya tampilan halaman daftar */
+        .page-daftar {
+            width: 360px;
+            padding: 8%;
+            margin: auto;
+        }
+        .form {
+            position: relative;
+            background: #FFFFFF;
+            max-width: 360px;
+            padding: 45px;
+            text-align: center;
+            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+        }
+        .form input {
+            font-family: "Roboto", sans-serif;
+            outline: 0;
+            background: #f2f2f2;
+            width: 100%;
+            border: 0;
+            margin: 0 0 15px;
+            padding: 15px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+        .form button {
+            font-family: "Roboto", sans-serif;
+            background: #1F89C5;
+            width: 100%;
+            border: 0;
+            padding: 15px;
+            color: #FFFFFF;
+            font-size: 14px;
+            cursor: pointer;
+            margin-bottom: 15px;
+        }
+        .form button:hover, .form button:active, .form button:focus {
+            background: #165c84;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // Fungsi JavaScript yang dipanggil saat tombol "Daftar" diklik
+        function halo(nama, asal){
+            alert("Halo " + nama + " dari " + asal);
+        }
+    </script>
+    <div class="page-daftar">
+        <div class="form">
+            <h3>Daftar</h3>
+            <form name="form">
+                <input type="text" placeholder="Nama lengkap" name="nama" id="nama"/><br>
+                <input type="text" placeholder="Alamat" name="alamat" id="alamat"/><br>
+                <input type="text" placeholder="Nomor telepon" name="notelp" id="notelp"/><br>
+                <input type="text" placeholder="Asal Universitas" name="asal" id="asal"/><br>
+                <button onclick="halo(document.getElementById('nama').value,document.getElementById('asal').value)">Daftar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
